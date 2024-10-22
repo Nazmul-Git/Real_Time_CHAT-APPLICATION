@@ -3,7 +3,7 @@ const express = require('express');
 
 // INTERNAL IMPORT
 const { getLogin } = require('../controller/loginController');
-const setPageTitle = require('../common/setPageTitle');
+const setPageTitle = require('../middleware/common/setPageTitle');
 
 
 const router = express.Router();

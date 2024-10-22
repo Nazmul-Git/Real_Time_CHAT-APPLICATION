@@ -6,7 +6,7 @@ const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 
 // INTERNAL IMPORT
-const { notFoundMiddleware, errorHandler } = require('./common/errorHandler');
+const { notFoundMiddleware, errorHandler } = require('./middleware/common/errorHandler');
 const loginRouter = require('./router/loginRouter');
 const usersRouter = require('./router/usersRouter');
 const inboxRouter = require('./router/inboxRouter');
