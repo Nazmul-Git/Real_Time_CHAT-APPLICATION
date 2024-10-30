@@ -6,6 +6,7 @@ const { getUsers, addUser, removeUser } = require('../controller/usersController
 const setPageTitle = require('../middleware/common/setPageTitle');
 const avatarUpload = require('../middleware/users/avatarUpload');
 const { addUserValidator, addUserValidationHandler } = require('../middleware/users/userValidators');
+const { checkLogin } = require('../middleware/common/checkLogin');
 
 const router = express.Router();
 

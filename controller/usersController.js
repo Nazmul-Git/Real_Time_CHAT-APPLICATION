@@ -1,3 +1,5 @@
+// CRUD methods are here...................
+
 const bcrypt = require('bcrypt');
 const User = require('../SchemaModel/Peoples');
 const { unlink } = require('fs');
