@@ -11,7 +11,7 @@ const { checkLogin } = require('../middleware/common/checkLogin');
 const router = express.Router();
 
 // USERS PAGE
-router.get('/', setPageTitle('Users'), getUsers);
+router.get('/', setPageTitle('Users'),checkLogin, getUsers);
 
 // ADD USER
 router.post('/', avatarUpload, addUserValidator, addUserValidationHandler, addUser); 
